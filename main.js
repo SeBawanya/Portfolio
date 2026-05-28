@@ -135,18 +135,57 @@ if (form) {
       document.head.appendChild(style);
     }
 
-    await new Promise(resolve => setTimeout(resolve, 1800));
+    // Configure your Formspree Form ID here
+    // Create a free account at https://formspree.io/ to get your Form ID!
+    const FORMSPREE_FORM_ID = 'YOUR_FORMSPREE_FORM_ID';
 
-    formStatus.textContent = `✓ Message sent! Thanks, ${name}. I'll get back to you soon.`;
-    formStatus.className = 'form-note success';
-    form.reset();
+    if (FORMSPREE_FORM_ID && FORMSPREE_FORM_ID !== 'YOUR_FORMSPREE_FORM_ID') {
+      // Real submission in the background using Formspree API
+      try {
+        const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+          })
+        });
 
-    submitBtn.innerHTML = originalContent;
-    submitBtn.disabled = false;
+        if (response.ok) {
+          formStatus.textContent = `✓ Message sent successfully! Thanks, ${name}. I'll get back to you soon.`;
+          formStatus.className = 'form-note success';
+          form.reset();
+        } else {
+          const data = await response.json();
+          formStatus.textContent = `⚠ Error: ${data.errors ? data.errors.map(err => err.message).join(', ') : 'Failed to send message.'}`;
+          formStatus.className = 'form-note error';
+        }
+      } catch (error) {
+        formStatus.textContent = '⚠ Network error. Please try again later or contact me via links above.';
+        formStatus.className = 'form-note error';
+      } finally {
+        submitBtn.innerHTML = originalContent;
+        submitBtn.disabled = false;
+      }
+    } else {
+      // Graceful local fallback (simulation + mailto link)
+      await new Promise(resolve => setTimeout(resolve, 1500));
 
-    // Open mailto as fallback
-    const mailtoLink = `mailto:sesaliebawanya4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Sesalie,\n\n${message}\n\n— ${name} (${email})`)}`;
-    window.location.href = mailtoLink;
+      formStatus.textContent = `✓ Opening your email client to send... Thanks, ${name}!`;
+      formStatus.className = 'form-note success';
+      form.reset();
+
+      submitBtn.innerHTML = originalContent;
+      submitBtn.disabled = false;
+
+      const mailtoLink = `mailto:sesaliebawanya4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Sesalie,\n\n${message}\n\n— ${name} (${email})`)}`;
+      window.location.href = mailtoLink;
+    }
   });
 }
 
