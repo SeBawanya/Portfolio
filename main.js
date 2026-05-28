@@ -102,8 +102,8 @@ if (form) {
     const originalContent = submitBtn.innerHTML;
 
     // Validate
-    const name    = document.getElementById('form-name').value.trim();
-    const email   = document.getElementById('form-email').value.trim();
+    const name = document.getElementById('form-name').value.trim();
+    const email = document.getElementById('form-email').value.trim();
     const subject = document.getElementById('form-subject').value.trim();
     const message = document.getElementById('form-message').value.trim();
 
@@ -137,7 +137,7 @@ if (form) {
 
     // Configure your Formspree Form ID here
     // Create a free account at https://formspree.io/ to get your Form ID!
-    const FORMSPREE_FORM_ID = 'YOUR_FORMSPREE_FORM_ID';
+    const FORMSPREE_FORM_ID = 'xredrvon';
 
     if (FORMSPREE_FORM_ID && FORMSPREE_FORM_ID !== 'YOUR_FORMSPREE_FORM_ID') {
       // Real submission in the background using Formspree API
@@ -240,7 +240,7 @@ if (window.matchMedia('(pointer: fine)').matches) {
 
   document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
-    cursor.style.top  = e.clientY + 'px';
+    cursor.style.top = e.clientY + 'px';
   }, { passive: true });
 }
 
@@ -255,16 +255,16 @@ if (window.matchMedia('(pointer: fine)').matches) {
   const targetEl = document.querySelector('.hero-subtitle .highlight');
   if (!targetEl) return;
 
-  let roleIdx  = 0;
-  let charIdx  = 0;
+  let roleIdx = 0;
+  let charIdx = 0;
   let deleting = false;
-  let paused   = false;
+  let paused = false;
 
   const originalText = targetEl.textContent;
 
   // Replace with cursor span
   targetEl.innerHTML = `<span class="typewriter-text"></span><span class="typewriter-cursor">|</span>`;
-  const textEl   = targetEl.querySelector('.typewriter-text');
+  const textEl = targetEl.querySelector('.typewriter-text');
   const cursorEl = targetEl.querySelector('.typewriter-cursor');
 
   const cursorStyle = document.createElement('style');
@@ -289,7 +289,7 @@ if (window.matchMedia('(pointer: fine)').matches) {
       textEl.textContent = current.slice(0, charIdx);
       if (charIdx === 0) {
         deleting = false;
-        roleIdx  = (roleIdx + 1) % roles.length;
+        roleIdx = (roleIdx + 1) % roles.length;
         setTimeout(type, 500);
         return;
       }
