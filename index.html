@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sesalie Bawanya | Data Science & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Sesalie Bawanya — Data Science undergraduate and Full-Stack Developer at SLIIT, specializing in AI/ML, MERN Stack, and mobile development." />
+  <meta name="keywords" content="Sesalie Bawanya, Data Science, Full-Stack Developer, SLIIT, AI, Machine Learning, React, Spring Boot" />
+  <meta name="author" content="Sesalie Bawanya" />
+  <meta property="og:title" content="Sesalie Bawanya | Data Science & Full-Stack Developer" />
+  <meta property="og:description" content="Bridging the gap between AI and robust web/mobile applications." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Sesalie Bawanya Home">
+        <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#skills" class="mobile-link" id="mob-skills">Skills</a></li>
+        <li><a href="#projects" class="mobile-link" id="mob-projects">Projects</a></li>
+        <li><a href="#education" class="mobile-link" id="mob-education">Education</a></li>
+        <li><a href="#contact" class="mobile-link" id="mob-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section class="hero" id="hero" aria-label="Hero Introduction">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--3" aria-hidden="true"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-name reveal-up delay-1">Sesalie Bawanya</h1>
+
+        <p class="hero-subtitle reveal-up delay-2">
+          Data Science Undergraduate &amp; Full-Stack Developer.
+          <span class="highlight">Bridging the gap between artificial intelligence</span>
+          and robust web/mobile applications.
+        </p>
+
+        <p class="hero-bio reveal-up delay-3">
+          An enthusiastic second-year IT undergraduate at SLIIT passionate about blending AI/ML
+          with full-stack frameworks to build innovative, real-world solutions. Highly methodical
+          in planning, creative in problem-solving, and driven to make impactful contributions.
+        </p>
+
+        <div class="hero-ctas reveal-up delay-4">
+          <a href="#projects" class="btn btn--primary" id="cta-view-projects">
+            <span>View Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--outline" id="cta-connect">
+            <span>Let's Connect</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-socials reveal-up delay-5">
+          <a href="https://github.com/SeBawanya" class="social-link" id="social-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/sesalie-banya-129261311/" class="social-link" id="social-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="hero-card-float">
+          <div class="floating-card card-1">
+            <div class="fc-icon" aria-hidden="true">🤖</div>
+            <div class="fc-text">
+              <span class="fc-title">AI/ML Engineering</span>
+              <span class="fc-sub">CNN · MobileNetV2 · NLP</span>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="fc-icon" aria-hidden="true">⚡</div>
+            <div class="fc-text">
+              <span class="fc-title">Full-Stack Dev</span>
+              <span class="fc-sub">MERN · Spring Boot · React Native</span>
+            </div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="fc-icon" aria-hidden="true">📊</div>
+            <div class="fc-text">
+              <span class="fc-title">Data Analytics</span>
+              <span class="fc-sub">Python · R · Pandas · Plotly</span>
+            </div>
+          </div>
+          <div class="avatar-ring" aria-hidden="true">
+            <div class="avatar-inner">
+              <span class="avatar-initials">SB</span>
+            </div>
+          </div>
+          <div class="orbit-ring orbit-1" aria-hidden="true">
+            <div class="orbit-dot"></div>
+          </div>
+          <div class="orbit-ring orbit-2" aria-hidden="true">
+            <div class="orbit-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ======== SKILLS SECTION ======== -->
+  <section class="skills-section section" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title" id="skills-heading">Technical Skills Matrix</h2>
+        <p class="section-desc">A curated stack of technologies I work with to engineer intelligent, scalable systems.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-card" id="skill-ai" tabindex="0">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--ai" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l3 3"/><circle cx="18" cy="6" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="skill-title">AI &amp; Data Science</h3>
+              <p class="skill-subtitle">Machine Intelligence</p>
+            </div>
+          </div>
+          <ul class="skill-tags" role="list">
+            <li class="tag tag--cyan">Python</li>
+            <li class="tag tag--cyan">R</li>
+            <li class="tag tag--blue">Supervised Learning</li>
+            <li class="tag tag--blue">Unsupervised Learning</li>
+            <li class="tag tag--teal">Neural Networks (CNN)</li>
+            <li class="tag tag--teal">MobileNetV2</li>
+            <li class="tag tag--teal">ResNet50</li>
+            <li class="tag tag--purple">NLP</li>
+            <li class="tag tag--cyan">Data Preprocessing</li>
+            <li class="tag tag--blue">Feature Engineering</li>
+          </ul>
+          <div class="skill-card-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="skill-card reveal-card delay-1" id="skill-analytics" tabindex="0">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--analytics" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <h3 class="skill-title">Data Analysis &amp; Analytics</h3>
+              <p class="skill-subtitle">Insight Engineering</p>
+            </div>
+          </div>
+          <ul class="skill-tags" role="list">
+            <li class="tag tag--cyan">NumPy</li>
+            <li class="tag tag--cyan">Pandas</li>
+            <li class="tag tag--blue">SciPy</li>
+            <li class="tag tag--blue">R Programming</li>
+            <li class="tag tag--teal">Matplotlib</li>
+            <li class="tag tag--teal">Seaborn</li>
+            <li class="tag tag--purple">Plotly</li>
+          </ul>
+          <div class="skill-card-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="skill-card reveal-card delay-2" id="skill-fullstack" tabindex="0">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--fullstack" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l3 3-3 3M13 14h4"/></svg>
+            </div>
+            <div>
+              <h3 class="skill-title">Full-Stack &amp; Mobile</h3>
+              <p class="skill-subtitle">End-to-End Development</p>
+            </div>
+          </div>
+          <ul class="skill-tags" role="list">
+            <li class="tag tag--cyan">Java Spring Boot</li>
+            <li class="tag tag--blue">MongoDB</li>
+            <li class="tag tag--blue">Express.js</li>
+            <li class="tag tag--teal">React</li>
+            <li class="tag tag--teal">Node.js</li>
+            <li class="tag tag--purple">React Native</li>
+            <li class="tag tag--cyan">HTML5</li>
+            <li class="tag tag--cyan">CSS3</li>
+            <li class="tag tag--blue">JavaScript</li>
+            <li class="tag tag--blue">Java</li>
+            <li class="tag tag--teal">C</li>
+          </ul>
+          <div class="skill-card-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="skill-card reveal-card delay-3" id="skill-tools" tabindex="0">
+          <div class="skill-card-header">
+            <div class="skill-icon skill-icon--tools" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div>
+              <h3 class="skill-title">Databases &amp; Tools</h3>
+              <p class="skill-subtitle">Infrastructure &amp; DevOps</p>
+            </div>
+          </div>
+          <ul class="skill-tags" role="list">
+            <li class="tag tag--cyan">MySQL</li>
+            <li class="tag tag--cyan">Microsoft SQL Server</li>
+            <li class="tag tag--blue">Git / GitHub</li>
+            <li class="tag tag--teal">Cloudinary</li>
+            <li class="tag tag--teal">JWT</li>
+            <li class="tag tag--purple">Expo (EAS)</li>
+            <li class="tag tag--blue">Railway</li>
+          </ul>
+          <div class="skill-card-glow" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROJECTS SECTION ======== -->
+  <section class="projects-section section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+        <p class="section-desc">Real-world systems built with modern technology stacks — from AI pipelines to production mobile apps.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal-card" id="project-govi-ai" tabindex="0" aria-label="Project: Govi Connect Smart Agriculture Platform">
+          <div class="project-number" aria-hidden="true">01</div>
+          <div class="project-accent project-accent--1" aria-hidden="true"></div>
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon project-icon--1" aria-hidden="true">🌾</div>
+              <div class="project-status">
+                <span class="status-dot status-dot--active"></span>
+                <span>Academic Project</span>
+              </div>
+            </div>
+            <h3 class="project-title">Govi Connect</h3>
+            <p class="project-subtitle">Smart Agriculture Platform &amp; AI Ecosystem</p>
+            <p class="project-desc">
+              An academic group project building an AI-powered agricultural hub. Developed an AI plant
+              disease diagnostic tool using <strong>MobileNetV2/ResNet50</strong> for paddy leaf disease
+              detection. Integrated the ML backend with a <strong>Java Spring Boot</strong> backend featuring
+              a multilingual CMS Hub (EN/SI/TA), an automated PDF-generating Admin Dashboard, a Smart
+              Advisory engine, and an LLM-powered Community Forum.
+            </p>
+            <ul class="project-tags" role="list" aria-label="Technologies used">
+              <li class="tag tag--project tag--cyan">Python</li>
+              <li class="tag tag--project tag--blue">Spring Boot</li>
+              <li class="tag tag--project tag--teal">MobileNetV2</li>
+              <li class="tag tag--project tag--blue">MySQL</li>
+              <li class="tag tag--project tag--purple">FastAPI</li>
+              <li class="tag tag--project tag--cyan">Gemini API</li>
+              <li class="tag tag--project tag--blue">Java</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal-card delay-1" id="project-govi-mobile" tabindex="0" aria-label="Project: Govi Connect Agri-Tech Mobile App">
+          <div class="project-number" aria-hidden="true">02</div>
+          <div class="project-accent project-accent--2" aria-hidden="true"></div>
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon project-icon--2" aria-hidden="true">📱</div>
+              <div class="project-status">
+                <span class="status-dot status-dot--active"></span>
+                <span>Academic Project</span>
+              </div>
+            </div>
+            <h3 class="project-title">Govi Connect</h3>
+            <p class="project-subtitle">Agri-Tech Mobile App</p>
+            <p class="project-desc">
+              A full-stack mobile platform for the agricultural sector. Built an expert blog system,
+              farmer activity tracker, and <strong>GoviMart</strong> marketplace with strict role-based
+              access control (Farmer / Expert / Admin). Configured and deployed production mobile builds
+              via <strong>Expo Application Services (EAS)</strong> and hosted the backend infrastructure
+              on <strong>Railway</strong>.
+            </p>
+            <ul class="project-tags" role="list" aria-label="Technologies used">
+              <li class="tag tag--project tag--purple">React Native</li>
+              <li class="tag tag--project tag--teal">Node.js</li>
+              <li class="tag tag--project tag--blue">Express.js</li>
+              <li class="tag tag--project tag--cyan">MongoDB</li>
+              <li class="tag tag--project tag--blue">Expo (EAS)</li>
+              <li class="tag tag--project tag--teal">Railway</li>
+              <li class="tag tag--project tag--blue">Cloudinary</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal-card delay-2" id="project-sentiment" tabindex="0" aria-label="Project: E-Commerce Sentiment Prediction Model">
+          <div class="project-number" aria-hidden="true">03</div>
+          <div class="project-accent project-accent--3" aria-hidden="true"></div>
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon project-icon--3" aria-hidden="true">🧠</div>
+              <div class="project-status">
+                <span class="status-dot status-dot--active"></span>
+                <span>Academic Project</span>
+              </div>
+            </div>
+            <h3 class="project-title">E-Commerce Sentiment</h3>
+            <p class="project-subtitle">NLP Prediction Model</p>
+            <p class="project-desc">
+              Engineered an AI-powered sentiment analysis pipeline to classify over
+              <strong>568,000+ Amazon customer reviews</strong> into Positive, Neutral, and Negative
+              categories. Designed, evaluated, and benchmarked <strong>6 ML architectures</strong>
+              (SVM, XGBoost, Random Forest, Logistic Regression, Multinomial Naive Bayes, MLP).
+              Created an end-to-end NLP pipeline covering class balancing, tokenization, lemmatization,
+              and TF-IDF vectorization.
+            </p>
+            <ul class="project-tags" role="list" aria-label="Technologies used">
+              <li class="tag tag--project tag--cyan">Python</li>
+              <li class="tag tag--project tag--blue">NLP</li>
+              <li class="tag tag--project tag--teal">Scikit-learn</li>
+              <li class="tag tag--project tag--purple">XGBoost</li>
+              <li class="tag tag--project tag--cyan">Pandas</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal-card delay-3" id="project-wedding" tabindex="0" aria-label="Project: Wedding Hotel Reservation System">
+          <div class="project-number" aria-hidden="true">04</div>
+          <div class="project-accent project-accent--4" aria-hidden="true"></div>
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon project-icon--4" aria-hidden="true">🏨</div>
+              <div class="project-status">
+                <span class="status-dot status-dot--active"></span>
+                <span>Academic Project</span>
+              </div>
+            </div>
+            <h3 class="project-title">Wedding Hotel Reservation</h3>
+            <p class="project-subtitle">Spring Boot Role-Based Portal</p>
+            <p class="project-desc">
+              A robust full-stack hotel reservation platform tailored for wedding guest management. Engineered 
+              a role-based authentication and authorization engine using <strong>Spring Security</strong>, 
+              connecting securely to a <strong>Microsoft SQL Server</strong> database via JPA/Hibernate. Built a 
+              dynamic web UI using <strong>Thymeleaf</strong> templates with customized welcome and user registration flows.
+            </p>
+            <ul class="project-tags" role="list" aria-label="Technologies used">
+              <li class="tag tag--project tag--cyan">Java</li>
+              <li class="tag tag--project tag--blue">Spring Boot</li>
+              <li class="tag tag--project tag--teal">Spring Security</li>
+              <li class="tag tag--project tag--purple">MS SQL Server</li>
+              <li class="tag tag--project tag--cyan">Thymeleaf</li>
+              <li class="tag tag--project tag--blue">JPA / Hibernate</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== EDUCATION & LEADERSHIP ======== -->
+  <section class="education-section section" id="education" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title" id="education-heading">Education &amp; Leadership</h2>
+        <p class="section-desc">Academic foundations and community impact that shape my approach to problem-solving.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <!-- Education -->
+        <div class="timeline-item reveal-left" id="timeline-edu">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="tm-inner">🎓</div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-tag">Academic Journey</div>
+            <h3 class="timeline-title">BSc (Hons) in Information Technology</h3>
+            <p class="timeline-subtitle">Specialized in Data Science</p>
+            <div class="timeline-org">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span>Sri Lanka Institute of Information Technology (SLIIT)</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="meta-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Expected Graduation: 2028
+              </span>
+              <span class="meta-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Currently 2nd Year
+              </span>
+            </div>
+            <p class="timeline-desc">
+              Pursuing a rigorous data science curriculum covering machine learning, data engineering,
+              software development, and research methodologies. Actively applying classroom knowledge
+              to real-world academic projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Community -->
+        <div class="timeline-item timeline-item--right reveal-right delay-1" id="timeline-community">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="tm-inner">🌟</div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-tag timeline-tag--purple">Community &amp; Leadership</div>
+            <h3 class="timeline-title">Active Leader &amp; Community Builder</h3>
+            <p class="timeline-subtitle">Shaping impact beyond the classroom</p>
+            <div class="community-orgs">
+              <div class="org-badge" id="org-leo">
+                <span class="org-badge-icon" aria-hidden="true">🦁</span>
+                <div>
+                  <span class="org-name">LEO Club of SLIIT</span>
+                  <span class="org-role">Active Member</span>
+                </div>
+              </div>
+              <div class="org-badge" id="org-guides">
+                <span class="org-badge-icon" aria-hidden="true">⚜️</span>
+                <div>
+                  <span class="org-name">Girl Guides Association</span>
+                  <span class="org-role">Active Member</span>
+                </div>
+              </div>
+            </div>
+            <div class="soft-skills">
+              <span class="soft-skill" id="skill-leadership">Leadership</span>
+              <span class="soft-skill" id="skill-pm">Project Management</span>
+              <span class="soft-skill" id="skill-collab">Collaborative Problem Solving</span>
+              <span class="soft-skill" id="skill-comms">Communication</span>
+              <span class="soft-skill" id="skill-creative">Creative Thinking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section class="contact-section section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title" id="contact-heading">Let's Build Something Great</h2>
+        <p class="section-desc">Open to internships, collaborations, and exciting project discussions. Let's connect!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Contact Details</h3>
+
+          <a href="mailto:sesaliebawanya4@gmail.com" class="contact-card contact-card--link" id="contact-email" aria-label="Send email to sesaliebawanya4@gmail.com">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">sesaliebawanya4@gmail.com</span>
+            </div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://github.com/SeBawanya" class="contact-card contact-card--link" id="contact-github-card" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/SeBawanya</span>
+            </div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://linkedin.com/in/sesalie-banya-129261311/" class="contact-card contact-card--link" id="contact-linkedin-card" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/sesalie-banya-129261311/</span>
+            </div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+          <h3 class="contact-info-title">Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="John Doe" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="john@example.com" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-subject" class="form-label">Subject</label>
+            <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Internship opportunity / Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" name="message" class="form-textarea" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="form-submit">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form-note" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo footer-logo" aria-label="Back to top">
+          <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Sesalie Bawanya. Crafted with passion in Sri Lanka 🇱🇰
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/SeBawanya" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/sesalie-banya-129261311/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
